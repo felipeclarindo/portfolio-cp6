@@ -19,9 +19,9 @@ export default function CadastrarProjetoPage() {
 
   const [showDropdown, setShowDropdown] = useState(false);
   const [categorias] = useState([
-    "checkpoints",
-    "global solutions",
-    "challenge",
+    "Checkpoint",
+    "Global Solution",
+    "Challenge",
   ]);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
