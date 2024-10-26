@@ -15,3 +15,10 @@ export type IntegrantesProps = {
   linkedin: string;
   image: string;
 };
+
+export type DesempenhoProps = {
+  id: number
+  nota: number;
+  author: string;
+  desempenho: "Mediocre" | "Razoável" | "Bom";
+};

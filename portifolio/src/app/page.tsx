@@ -1,3 +1,4 @@
+import Desempenho from "@/components/Desempenho";
 import Link from "next/link";
 
 export default function HomePage() {
@@ -47,23 +48,7 @@ export default function HomePage() {
 
       <div className="w-full max-w-4xl flex flex-col items-center mt-2 gap-8">
         <h2 className="font-semibold text-[40px]">Desempenho Geral</h2>
-        <div className="w-full flex flex-wrap justify-center gap-8">
-          <div className="w-[320px] h-[200px] border-black bg-gray-200 rounded-lg shadow-md flex items-center justify-center">
-            <p className="text-lg text-black font-bold">
-              Gráfico: Média Geral de Notas
-            </p> 
-          </div>
-
-          <div className="w-[320px] h-[200px] border-black bg-gray-200 rounded-lg shadow-md flex items-center justify-center">
-            <p className="text-lg text-black font-bold">Gráfico: Taxa de Conclusão</p>
-          </div>
-
-          <div className="w-[320px] h-[200px] border-black bg-gray-200 rounded-lg shadow-md flex items-center justify-center">
-            <p className="text-lg text-black font-bold">
-              Gráfico: Desempenho dos Alunos
-            </p>
-          </div>
-        </div>
+        <Desempenho/>
       </div>
     </div>
   );
