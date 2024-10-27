@@ -6,8 +6,8 @@ export const integrantes: IntegrantesProps[] = [
     nome: "Victor",
     image:
       "https://cdn.discordapp.com/attachments/1294144540143259659/1299638739923898410/075ba61d-6111-4197-bd9c-bc011749abff.png?ex=671dee65&is=671c9ce5&hm=01b9581f1c11f83e29e4a830a3df3357c5d87b78fb4a81a030376cbd5f84159d&",
-    github: "https://github.com/felipeclarindo",
-    linkedin: "https://linkedin.com/in/felipeclarindo",
+    github: "https://github.com/vitin46",
+    linkedin: "https://linkedin.co  m/in/victor-egidio/",
   },
   {
     id: 3,
