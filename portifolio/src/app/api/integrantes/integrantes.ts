@@ -22,8 +22,8 @@ export const integrantes: IntegrantesProps[] = [
     nome: "Diego",
     image:
       "https://cdn.discordapp.com/attachments/1294144540143259659/1299638714917457941/6cefd349-97ca-4a85-be94-c4b597821ca6.png?ex=671dee5f&is=671c9cdf&hm=ba53e400149612b9fc1420a753f585448d61254d3fc011319e6d66dabc112e27&",
-    github: "https://github.com/felipeclarindo",
-    linkedin: "https://linkedin.com/in/felipeclarindo",
+    github: "https://github.com/DGMMX",
+    linkedin: "https://www.linkedin.com/in/diego-bassalo-ab7276334/",
   },
   {
     id: 5,
