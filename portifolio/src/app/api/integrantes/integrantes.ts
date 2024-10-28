@@ -2,6 +2,14 @@ import { IntegrantesProps } from "@/types/types";
 
 export const integrantes: IntegrantesProps[] = [
   {
+    id: 1,
+    nome: "Felipe Clarindo",
+    image:
+      "https://cdn.discordapp.com/attachments/1294144540143259659/1300284691877728316/image.png?ex=672047fc&is=671ef67c&hm=9d69b6a1fda91841afc1c35023fdbad774f72c95fa79be4e87471a0f18a2f639&",
+    github: "https://github.com/felipeclarindo",
+    linkedin: "https://linkedin.com/in/felipeclarindo",
+  },
+  {
     id: 2,
     nome: "Victor",
     image:

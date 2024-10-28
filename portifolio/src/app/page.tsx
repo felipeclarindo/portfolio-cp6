@@ -48,7 +48,7 @@ export default function HomePage() {
 
       <div className="w-full max-w-4xl flex flex-col items-center mt-2 gap-8">
         <h2 className="font-semibold text-[40px]">Desempenho Geral</h2>
-        <Desempenho/>
+        <Desempenho />
       </div>
     </div>
   );
