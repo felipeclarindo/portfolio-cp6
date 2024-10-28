@@ -52,5 +52,32 @@
     "author": "Caetano",
     "nota": 5.7,
     "id": 6
+  },
+  {
+    "title": "Reparação Automotiva",
+    "descricao": "Projeto voltado para a otimização de Reparação Automotiva",
+    "link": "https://github.com/kauazipf/MKV-Challenge",
+    "categoria": "Challenge",
+    "author": "Victor",
+    "nota": 5.8,
+    "id": 7
+  }
+  {
+    "title": "Oceanos em Crise",
+    "descricao": "Projeto voltado para a sensibilizar a população sobre a poluição marinha",
+    "link": "https://github.com/kauazipf/Global-Solution",
+    "categoria": "Global Solution",
+    "author": "Victor",
+    "nota": 6.5,
+    "id": 8
+  }
+  {
+    "title": "Checkpoint Python",
+    "descricao": "Projeto voltado para avaliar e implementar funções",
+    "link": "https://github.com/Vitin46/checkpoint4---python",
+    "categoria": "Checkpoint",
+    "author": "Victor",
+    "nota": 10,
+    "id": 9
   }
 ]
