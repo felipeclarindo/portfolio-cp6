@@ -4,7 +4,7 @@ import LoadingSpinner from "@/components/LoadingSpinner";
 import { ProjectProps } from "@/types/types";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { GrEdit as Editar } from "react-icons/gr";
+import { GrShare as View } from "react-icons/gr";
 import { RiDeleteBin2Line as Excluir } from "react-icons/ri";
 
 export default function CategoryFilter({
@@ -82,8 +82,8 @@ export default function CategoryFilter({
                   <th className="p-4 border border-gray-300">Autor</th>
                   <th className="p-4 border border-gray-300">Categoria</th>
                   <th className="p-4 border border-gray-300">Link</th>
-                  <th className="p-4 border border-gray-300 text-center">
-                    Editar | Excluir
+                  <th className="p-4 border w-[150px] border-gray-300 text-center">
+                    View | Excluir
                   </th>
                 </tr>
               </thead>
@@ -91,25 +91,25 @@ export default function CategoryFilter({
                 {visibleCategory.length > 0 ? (
                   visibleCategory.map((project) => (
                     <tr key={project.id} className="hover:bg-gray-100">
-                      <td className="p-4 border border-gray-300">
+                      <td className="p-4 border border-gray-300 text-center">
                         {project.id}
                       </td>
-                      <td className="p-4 border border-gray-300">
+                      <td className="p-4 border border-gray-300 text-center">
                         {project.title}
                       </td>
-                      <td className="p-4 border border-gray-300">
+                      <td className="p-4 border border-gray-300 text-center">
                         {project.descricao}
                       </td>
-                      <td className="p-4 border border-gray-300">
+                      <td className="p-4 border border-gray-300 text-center">
                         {project.nota}
                       </td>
-                      <td className="p-4 border border-gray-300">
+                      <td className="p-4 border border-gray-300 text-center">
                         {project.author}
                       </td>
-                      <td className="p-4 border border-gray-300">
+                      <td className="p-4 border border-gray-300 text-center">
                         {project.categoria}
                       </td>
-                      <td className="p-4 border border-gray-300">
+                      <td className="p-4 border border-gray-300 text-center">
                         <Link
                           href={project.link}
                           target="_blank"
@@ -121,12 +121,12 @@ export default function CategoryFilter({
                       </td>
                       <td className="p-4 border border-gray-300 text-center">
                         <Link href={`/projetos/${project.id}`}>
-                          <Editar className="inline text-xl text-blue-600 mr-2 cursor-pointer" />
+                          <View className="inline text-xl text-blue-600 mr-2 cursor-pointer transition-all ease-in-out duration-300 hover:opacity-60" />
                         </Link>
                         |
                         <Excluir
                           onClick={() => handleDelete(project.id)}
-                          className="inline text-xl text-red-600 ml-2 cursor-pointer"
+                          className="inline text-xl text-red-600 ml-2 cursor-pointer transition-all ease-in-out duration-300 hover:opacity-60"
                         />
                       </td>
                     </tr>

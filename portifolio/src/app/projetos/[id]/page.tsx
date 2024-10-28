@@ -1,5 +1,6 @@
 "use client";
 
+import LoadingSpinner from "@/components/LoadingSpinner";
 import { ProjectProps } from "@/types/types";
 import Link from "next/link";
 import { useEffect, useState } from "react";
@@ -11,7 +12,6 @@ export default function ProjetoPage({
   params: Promise<{ id: string }>;
 }) {
   const { id } = use(params);
-
   const [projeto, setProjeto] = useState<ProjectProps>({
     author: "",
     categoria: "",
@@ -21,6 +21,7 @@ export default function ProjetoPage({
     nota: 0,
     title: "",
   });
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const getProjeto = async () => {
@@ -31,6 +32,7 @@ export default function ProjetoPage({
         }
         const data = await response.json();
         setProjeto(data);
+        setLoading(false);
       } catch (error) {
         console.error(error);
       }
@@ -38,11 +40,12 @@ export default function ProjetoPage({
     getProjeto();
   }, [id]);
 
-  return (
+  return loading ? (
+    <LoadingSpinner />
+  ) : (
     <div className="h-[100vh] px-4 py-8 flex flex-col items-center">
-      <h1 className="font-bold text-4xl mb-6">{projeto.title}</h1>
-      <div className="bg-white shadow-md rounded-lg p-6 w-full max-w-2xl">
-        <h2 className="text-2xl font-semibold mb-4">Detalhes do Projeto</h2>
+      <div className="bg-white shadow-md rounded-lg p-6 w-full max-w-2xl border-2 border-black">
+        <h1 className="font-bold text-4xl mb-4 text-center">{projeto.title}</h1>
         <p className="mb-2">
           <strong>Autor:</strong> {projeto.author}
         </p>
@@ -69,7 +72,7 @@ export default function ProjetoPage({
       </div>
       <Link
         className="mt-6 font-bold px-8 py-2 text-xl bg-gray-800 text-orange-50 rounded-md hover:opacity-75 transition"
-        href={`/projetos/${projeto.id}/editar`}
+        href={`/projetos/editar/${projeto.id}`}
       >
         Editar Projeto
       </Link>

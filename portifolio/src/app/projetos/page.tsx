@@ -4,7 +4,7 @@ import LoadingSpinner from "@/components/LoadingSpinner";
 import { ProjectProps } from "@/types/types";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { GrEdit as Editar } from "react-icons/gr";
+import { GrShare as View } from "react-icons/gr";
 import { RiDeleteBin2Line as Excluir } from "react-icons/ri";
 
 export default function ProjetosPage() {
@@ -73,8 +73,8 @@ export default function ProjetosPage() {
                 <th className="p-4 border border-gray-300">Autor</th>
                 <th className="p-4 border border-gray-300">Categoria</th>
                 <th className="p-4 border border-gray-300">Link</th>
-                <th className="p-4 border border-gray-300 text-center">
-                  Editar | Excluir
+                <th className="p-4 border w-[150px] border-gray-300 text-center">
+                  View | Excluir
                 </th>
               </tr>
             </thead>
@@ -82,20 +82,22 @@ export default function ProjetosPage() {
               {visibleProjects.length > 0 ? (
                 visibleProjects.map((projeto) => (
                   <tr key={projeto.id} className="hover:bg-gray-100">
-                    <td className="p-4 border border-gray-300">{projeto.id}</td>
-                    <td className="p-4 border border-gray-300">
+                    <td className="p-4 border border-gray-300 text-center">
+                      {projeto.id}
+                    </td>
+                    <td className="p-4 border border-gray-300 text-center">
                       {projeto.title}
                     </td>
-                    <td className="p-4 border border-gray-300">
+                    <td className="p-4 border border-gray-300 text-center">
                       {projeto.descricao}
                     </td>
-                    <td className="p-4 border border-gray-300">
+                    <td className="p-4 border border-gray-300 text-center">
                       {projeto.nota}
                     </td>
-                    <td className="p-4 border border-gray-300">
+                    <td className="p-4 border border-gray-300 text-center">
                       {projeto.author}
                     </td>
-                    <td className="p-4 border border-gray-300">
+                    <td className="p-4 border border-gray-300 text-center">
                       <Link
                         className="text-blue-600 underline underline-offset-2 transition-all duration-300 ease-in-out hover:opacity-60"
                         href={`/projetos/${projeto.categoria
@@ -117,12 +119,12 @@ export default function ProjetosPage() {
                     </td>
                     <td className="p-4 border border-gray-300 text-center">
                       <Link href={`/projetos/${projeto.id}`}>
-                        <Editar className="inline text-xl text-blue-600 mr-2 cursor-pointer" />
+                        <View className="inline text-xl text-blue-600 mr-2 w-4 cursor-pointer transition-all ease-in-out duration-300 hover:opacity-60" />
                       </Link>
                       |
                       <Excluir
                         onClick={() => handleDelete(projeto.id)}
-                        className="inline text-xl text-red-600 ml-2 cursor-pointer"
+                        className="inline text-xl text-red-600 ml-2 cursor-pointer transition-all ease-in-out duration-300 hover:opacity-60"
                       />
                     </td>
                   </tr>

@@ -1,15 +1,14 @@
-# Portfólio de Avaliações Acadêmicas
-
-### CheckPoints, GlobalSolution e Challenger Sprints
+# Portfólio (Checkpoint 6)
 
 **Disciplina**: Front-End Design Engineering  
 **Professor**: Alexandre C. de Jesus  
 **Curso**: Análise e Desenvolvimento de Sistemas - FIAP  
-**Turma**: 1TDS#
+**Turma**: 1TDSPG
 
 ---
 
 ## Índice
+
 - [Descrição Geral](#descrição-geral)
 - [Tecnologias Utilizadas](#tecnologias-utilizadas)
 - [Instalação e Configuração](#instalação-e-configuração)
@@ -21,15 +20,16 @@
 
 ## Descrição Geral
 
-Este projeto tem como objetivo o desenvolvimento de uma aplicação web em **Next.js** e **TypeScript** para exibir um portfólio das avaliações realizadas ao longo do curso, com destaque para três tipos principais de avaliações:
+Este projeto tem como objetivo o desenvolvimento de uma aplicação web em **Next.js** e **TypeScript** para exibir um portfólio das avaliações realizadas ao longo da faculdade, com destaque para três tipos principais de avaliações:
+
 1. **CheckPoints (CPS)** - Acompanhamento do progresso com avaliações intermediárias.
 2. **GlobalSolution (GS)** - Avaliações integradoras, abrangendo o uso global dos conhecimentos.
 3. **Challenger Sprints** - Desafios rápidos focados em resolução de problemas.
 
-A aplicação permite a visualização das notas e feedbacks das avaliações, além de possibilitar a adição e edição de dados por meio de formulários, seguindo os requisitos de rotas dinâmicas e layout responsivo.
----
+## A aplicação permite a visualização das notas e feedbacks das avaliações, além de possibilitar a adição e edição de dados por meio de formulários, seguindo os requisitos de rotas dinâmicas e layout responsivo.
 
 ## Tecnologias Utilizadas
+
 - **Next.js** com **TypeScript**
 - **Tailwind CSS** para estilização
 - **Git** e **GitHub** para versionamento
@@ -43,15 +43,13 @@ A aplicação permite a visualização das notas e feedbacks das avaliações, a
    git clone https://github.com/felipeclarindo/portfolio-cp6.git
 
 2. **Instale as dependências:**
-    cd portfolio
-    npm install
+   cd portfolio
+   npm install
 
 3. **Inicie o servidor de desenvolvimento:**
-    npm run dev
+   npm run dev
 
 4. **Acesse o projeto: Abra http://localhost:3000 no navegador para ver a aplicação.**
-
-
 
 ## Funcionalidades
 
@@ -63,8 +61,8 @@ A aplicação permite a visualização das notas e feedbacks das avaliações, a
 - **Formulários de Inserção e Edição:** Adição e edição de avaliações via formulários (POST e PUT).
 - **Páginas de Erro Personalizadas:** Erros 404, 500 e outros.
 - **Fallback e Loading States:** Tratamento visual de rotas dinâmicas e estados de carregamento.
----
 
+---
 
 ## Deploy
 
@@ -74,8 +72,8 @@ O projeto está publicado na **Vercel** e pode ser acessado [aqui](#).
 
 ## Integrantes
 
-- Caetano Penafiel - RM: 557984  
-- Kauã Zipf        - RM: 558957 
-- Victor Egidio    - RM: 556653
-- Felipe Clarindo  - RM: 554547
-- Diego Bassalo    - RM: 558710
+- Caetano Penafiel - RM: 557984
+- Kauã Zipf - RM: 558957
+- Victor Egidio - RM: 556653
+- Felipe Clarindo - RM: 554547
+- Diego Bassalo - RM: 558710

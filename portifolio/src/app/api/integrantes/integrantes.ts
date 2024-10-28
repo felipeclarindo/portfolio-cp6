@@ -13,7 +13,7 @@ export const integrantes: IntegrantesProps[] = [
     id: 2,
     nome: "Victor",
     image:
-      "https://cdn.discordapp.com/attachments/1294144540143259659/1299638739923898410/075ba61d-6111-4197-bd9c-bc011749abff.png?ex=671dee65&is=671c9ce5&hm=01b9581f1c11f83e29e4a830a3df3357c5d87b78fb4a81a030376cbd5f84159d&",
+      "https://cdn.discordapp.com/attachments/1294144540143259659/1299638739923898410/075ba61d-6111-4197-bd9c-bc011749abff.png?ex=67209165&is=671f3fe5&hm=f292e15bdfbed3fead5984532cdb4953adfcc50255d75b74a9373b813358ca68&",
     github: "https://github.com/vitin46",
     linkedin: "https://linkedin.com/in/victor-egidio/",
   },
@@ -21,7 +21,7 @@ export const integrantes: IntegrantesProps[] = [
     id: 3,
     nome: "Caetano",
     image:
-      "https://cdn.discordapp.com/attachments/473598054138904586/1299711794528653312/382446272_6545596672156558_922302855324028153_n.jpg?ex=671e326f&is=671ce0ef&hm=9cbdc235401ea7715d5980e626158d4fdb2a55048949c38e222e24f8d3506bdb&",
+      "https://cdn.discordapp.com/attachments/473598054138904586/1299711794528653312/382446272_6545596672156558_922302855324028153_n.jpg?ex=6720d56f&is=671f83ef&hm=6ae4084d516c2562640a1c5a5f098e16af2a9519b7d62fbcf6744c21d122989e&",
     github: "https://github.com/Caepena",
     linkedin: "https://linkedin.com/in/caetano-penafiel",
   },
@@ -29,7 +29,7 @@ export const integrantes: IntegrantesProps[] = [
     id: 4,
     nome: "Diego",
     image:
-      "https://cdn.discordapp.com/attachments/1294144540143259659/1299638714917457941/6cefd349-97ca-4a85-be94-c4b597821ca6.png?ex=671dee5f&is=671c9cdf&hm=ba53e400149612b9fc1420a753f585448d61254d3fc011319e6d66dabc112e27&",
+      "https://cdn.discordapp.com/attachments/1294144540143259659/1299638714917457941/6cefd349-97ca-4a85-be94-c4b597821ca6.png?ex=6720915f&is=671f3fdf&hm=4ba372429bd2f15c5c2ef6250f9a41b87eef8fc7bd2ef4c3a0e4e842f892bd64&",
     github: "https://github.com/DGMMX",
     linkedin: "https://www.linkedin.com/in/diego-bassalo-ab7276334/",
   },
@@ -37,7 +37,7 @@ export const integrantes: IntegrantesProps[] = [
     id: 5,
     nome: "Kauã",
     image:
-      "https://cdn.discordapp.com/attachments/1294144540143259659/1299638455915249684/aa1efaa4-9dfd-4765-8160-df7ded378c4f.png?ex=671dee22&is=671c9ca2&hm=953ee444ddfc8d06f2a2cad4af348f1b97e04b9b5ca0d411b1d2c422c9bdf634&",
+      "https://cdn.discordapp.com/attachments/1294144540143259659/1299638455915249684/aa1efaa4-9dfd-4765-8160-df7ded378c4f.png?ex=67209122&is=671f3fa2&hm=fcd927115938df42fbcc4cc0ace2cb17515f898212262a3933b838bd46b7e10d&",
     github: "https://github.com/kauazipf",
     linkedin: "https://www.linkedin.com/in/kaua-zipf-95364a2ba/",
   },
