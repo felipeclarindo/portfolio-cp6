@@ -18,7 +18,7 @@ export default function IntegranteCard({
       <Image
         className=" max-h-[70%] rounded-full"
         loader={loaderImage}
-        src={integrante.image}
+        src={`/images/${integrante.image}`}
         alt={integrante.nome}
         width={200}
         height={200}

@@ -25,9 +25,14 @@ export default function Desempenho() {
     {}
   );
 
+  const apiUrl =
+    process.env.NODE_ENV === "production"
+      ? process.env.NEXT_PUBLIC_PRODUCTION_URL
+      : "http://localhost:3000";
+
   useEffect(() => {
     async function getNotas() {
-      const response = await fetch("http://localhost:3000/api/projetos");
+      const response = await fetch(`${apiUrl}/api/projetos`);
       const data = await response.json();
       setLoading(false);
 
@@ -49,7 +54,7 @@ export default function Desempenho() {
     }
 
     getNotas();
-  }, []);
+  }, [apiUrl]);
 
   return (
     <div className="w-full">

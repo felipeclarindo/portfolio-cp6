@@ -23,10 +23,15 @@ export default function ProjetoPage({
   });
   const [loading, setLoading] = useState(true);
 
+  const apiUrl =
+    process.env.NODE_ENV === "production"
+      ? process.env.NEXT_PUBLIC_PRODUCTION_URL
+      : "http://localhost:3000";
+
   useEffect(() => {
     const getProjeto = async () => {
       try {
-        const response = await fetch(`/api/projetos/${Number(id)}`);
+        const response = await fetch(`${apiUrl}/api/projetos/${Number(id)}`);
         if (!response.ok) {
           throw new Error("Erro ao buscar o projeto.");
         }
@@ -38,7 +43,7 @@ export default function ProjetoPage({
       }
     };
     getProjeto();
-  }, [id]);
+  }, [id, apiUrl]);
 
   return loading ? (
     <LoadingSpinner />

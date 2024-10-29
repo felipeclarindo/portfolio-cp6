@@ -17,10 +17,15 @@ export default function CategoryFilter({
   const [loading, setLoading] = useState(true);
   const [visibleCount, setVisibleCount] = useState(5);
 
+  const apiUrl =
+    process.env.NODE_ENV === "production"
+      ? process.env.NEXT_PUBLIC_PRODUCTION_URL
+      : "http://localhost:3000";
+
   useEffect(() => {
     const fetchCategory = async () => {
       try {
-        const response = await fetch("http://localhost:3000/api/projetos");
+        const response = await fetch(`${apiUrl}/api/projetos`);
         const data = await response.json();
         const filteredCategory = data.filter(
           (project: ProjectProps) =>
@@ -35,7 +40,7 @@ export default function CategoryFilter({
       }
     };
     fetchCategory();
-  }, [category]);
+  }, [category, apiUrl]);
 
   const handleLoadMore = () => {
     const newVisibleCount = visibleCount + 5;

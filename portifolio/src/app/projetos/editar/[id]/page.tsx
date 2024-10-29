@@ -25,16 +25,19 @@ export default function EditarprojetosPage({
   const [showDropdown, setShowDropdown] = useState(false);
   const [categorias] = useState(["checkpoint", "global solution", "challenge"]);
 
+  const apiUrl =
+    process.env.NODE_ENV === "production"
+      ? process.env.NEXT_PUBLIC_PRODUCTION_URL
+      : "http://localhost:3000";
+
   useEffect(() => {
     const chamadaApi = async () => {
-      const response = await fetch(
-        `http://localhost:3000/api/projetos/${Number(id)}`
-      );
+      const response = await fetch(`${apiUrl}/api/projetos/${Number(id)}`);
       const data = await response.json();
       setProjeto(data);
     };
     chamadaApi();
-  }, []);
+  }, [id, apiUrl]);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();

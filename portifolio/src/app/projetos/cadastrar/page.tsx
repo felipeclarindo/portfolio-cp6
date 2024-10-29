@@ -18,11 +18,12 @@ export default function CadastrarProjetoPage() {
   });
 
   const [showDropdown, setShowDropdown] = useState(false);
-  const [categorias] = useState([
-    "Checkpoint",
-    "Global Solution",
-    "Challenge",
-  ]);
+  const [categorias] = useState(["Checkpoint", "Global Solution", "Challenge"]);
+
+  const apiUrl =
+    process.env.NODE_ENV === "production"
+      ? process.env.NEXT_PUBLIC_PRODUCTION_URL
+      : "http://localhost:3000";
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
@@ -32,7 +33,7 @@ export default function CadastrarProjetoPage() {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     try {
-      const response = await fetch("http://localhost:3000/api/projetos", {
+      const response = await fetch(`${apiUrl}/api/projetos`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

@@ -13,10 +13,15 @@ export default function ProjetosPage() {
   const [loading, setLoading] = useState(true);
   const [visibleCount, setVisibleCount] = useState(5);
 
+  const apiUrl =
+    process.env.NODE_ENV === "production"
+      ? process.env.NEXT_PUBLIC_PRODUCTION_URL
+      : "http://localhost:3000";
+
   useEffect(() => {
     const getProjetos = async () => {
       try {
-        const response = await fetch("http://localhost:3000/api/projetos");
+        const response = await fetch(`${apiUrl}/api/projetos`);
         const data = await response.json();
         setProjetos(data);
         setVisibleProjects(data.slice(0, 5));
@@ -27,7 +32,7 @@ export default function ProjetosPage() {
       }
     };
     getProjetos();
-  }, []);
+  }, [apiUrl]);
 
   const handleLoadMore = () => {
     const newVisibleCount = visibleCount + 5;
@@ -37,7 +42,7 @@ export default function ProjetosPage() {
 
   const handleDelete = async (id: number) => {
     try {
-      const response = await fetch(`http://localhost:3000/api/projetos/${id}`, {
+      const response = await fetch(`${apiUrl}/api/projetos/${id}`, {
         method: "DELETE",
       });
       if (response.ok) {
