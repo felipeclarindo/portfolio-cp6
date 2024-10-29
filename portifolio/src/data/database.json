@@ -106,5 +106,41 @@
     "author": "Diego",
     "nota": 5.7,
     "id": 12
+  },
+  {
+    "title": "CheckPoint-1-Front-End",
+    "descricao": "Projeto proposto pelo professor de Front-End. O site consiste em uma lista de paginas com os cursos da FIAP",
+    "link": "https://github.com/kauazipf/Checkpoint---1-Front-End-Design-Engineering",
+    "categoria": "Checkpoint",
+    "author": "Kauã Fermino Zipf",
+    "nota": 7,
+    "id": 13
+  },
+  {
+    "title": "Oceanic - Global-Solution",
+    "descricao": "Site para abordar os desafios urgentes enfrentados pelos oceanos devido à poluição, mudanças climáticas e pesca insustentável.",
+    "link": "https://github.com/kauazipf/Global-Solution",
+    "categoria": "Global Solution",
+    "author": "Kauã Fermino Zipf",
+    "nota": 6.5,
+    "id": 14
+  },
+  {
+    "title": "MKV-CHALLENGE",
+    "descricao": "Continuação do projeto proposto pela Porto Seguro, porém com a utilização de TypeScript",
+    "link": "https://github.com/kauazipf/MKV-CHALLENGE-VITE-REACT",
+    "categoria": "Challenge",
+    "author": "Kauã Fermino Zipf",
+    "nota": 5.8,
+    "id": 15
+  },
+  {
+    "title": "CheckPoint-5",
+    "descricao": "Projeto com objetivo de criar algumas paginas sobre o livro Worlds In Colision do autor Immanuel Velikovsky",
+    "link": "https://github.com/kauazipf/Checkpoint-5",
+    "categoria": "Checkpoint",
+    "author": "Kauã Fermino Zipf",
+    "nota": 4.5,
+    "id": 16
   }
 ]
