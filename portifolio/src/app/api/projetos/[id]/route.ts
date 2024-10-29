@@ -4,9 +4,10 @@ import { ProjectProps } from "@/types/types";
 
 export async function GET(
   request: Request,
-  { params }: { params: { id: number } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
+    const idParams = params;
     const file = await fs.readFile(
       process.cwd() + "/src/data/database.json",
       "utf-8"
@@ -14,7 +15,7 @@ export async function GET(
 
     const projetos: ProjectProps[] = JSON.parse(file);
 
-    const projeto = projetos.find((p) => p.id == params.id);
+    const projeto = projetos.find((p) => p.id == Number(idParams));
 
     return NextResponse.json(projeto);
   } catch (error) {
@@ -27,8 +28,9 @@ export async function GET(
 
 export async function DELETE(
   request: Request,
-  { params }: { params: { id: number } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
+  const idParams = params;
   try {
     const file = await fs.readFile(
       process.cwd() + "/src/data/database.json",
@@ -37,7 +39,7 @@ export async function DELETE(
 
     const projetos: ProjectProps[] = JSON.parse(file);
 
-    const indice = projetos.findIndex((p) => p.id == params.id);
+    const indice = projetos.findIndex((p) => p.id == Number(idParams));
 
     if (indice != -1) {
       projetos.splice(indice, 1);
@@ -58,8 +60,9 @@ export async function DELETE(
 
 export async function PUT(
   request: Request,
-  { params }: { params: { id: number } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
+  const idParams = params;
   try {
     const file = await fs.readFile(
       process.cwd() + "/src/data/database.json",
@@ -71,7 +74,7 @@ export async function PUT(
     const { descricao, id, link, title, author, categoria, nota } =
       await request.json();
 
-    const indice = projetos.findIndex((p) => p.id == params.id);
+    const indice = projetos.findIndex((p) => p.id == Number(idParams));
 
     if (indice != -1) {
       const projeto: ProjectProps = {
@@ -84,7 +87,7 @@ export async function PUT(
         nota,
       };
 
-      projeto.id = params.id;
+      projeto.id = Number(idParams);
 
       projetos.splice(indice, 1, projeto);
 
