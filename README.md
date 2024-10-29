@@ -66,7 +66,7 @@ Este projeto tem como objetivo o desenvolvimento de uma aplicação web em **Nex
 
 ## Deploy
 
-O projeto está publicado na **Vercel** e pode ser acessado [aqui](#).
+O projeto está publicado na **Vercel** e pode ser acessado [aqui](https://portfolio-cp6.vercel.app).
 
 ---
 
