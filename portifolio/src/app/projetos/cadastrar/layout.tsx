@@ -1,9 +1,9 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Cadastrar Projetos | Portfolio",
-  description: "Cadastro de projetos no portifólio",
-  keywords: "cadastro, projetos, portifolio",
+  title: "Cadastrar Projeto | Portfolio",
+  description: "Cadastro de projeto no portfólio",
+  keywords: "cadastro, projeto, portfólio",
 };
 
 export default function CadastrarProjetoLayout({

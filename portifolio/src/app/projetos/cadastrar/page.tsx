@@ -70,8 +70,8 @@ export default function CadastrarProjetoPage() {
   };
 
   return (
-    <div className="h-[80vh] flex flex-col justify-center items-center">
-      <h1 className="font-bold text-[45px]">Cadastrar</h1>
+    <div className="h-[90vh] flex flex-col justify-center items-center py-4">
+      <h1 className="font-bold text-[45px] mt-15">Cadastrar</h1>
       <form onSubmit={handleSubmit} className="w-[25%] mx-auto m-10">
         <div className="mb-5">
           <label
@@ -195,7 +195,7 @@ export default function CadastrarProjetoPage() {
 
         <button
           type="submit"
-          className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          className=" text-lg bg-gray-800 py-2.5 block m-auto px-6 rounded-md text-white mx-auto transition-all duration-300 ease-in-out hover:opacity-60"
         >
           Cadastrar
         </button>
